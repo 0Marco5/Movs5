@@ -698,81 +698,111 @@ public class Mensaje
     }
 
 
-    static async Task SendMessage10PAsync(string chatID, string Sysmbol,
-        string Price, string ChangeRate, string Low, string High)
+    public async Task SendMessage10PAsync(string chatID, string Sysmbol,
+         string Price, string ChangeRate, string Low, string High)
     {
         var botClient = new TelegramBotClient("5138490742:AAFK7ZVo8CDaggoCYWc716c1llfqnJCx0zk");
         Message message = await botClient.SendTextMessageAsync(
             chatId: chatID,
             text:
-            $"Buen movimiento : )\n" +
-            $"{Sysmbol} se ha movido {ChangeRate}%\n" +
-            $"En las ultimas 24h, terminando con un precio de {Price}\n" +
-            $"Teniendo un Low de {Low} y un High de {High}");
+            $"Buen movimiento 🙂\n" +
+            "\n" +
+            $"👉 {Sysmbol} ha subido {ChangeRate}%" +
+            " en las ultimas 24h\n" +
+            "\n" +
+            $"Teniendo un Low 📉 de {Low} y un High 📈 de {High}" +
+            "\n" +
+            "\n" +
+            $"✍️ Precio actual: {Price}");
     }
 
-    static async Task SendMessage10NAsync(string chatID, string Sysmbol,
+    public async Task SendMessage10NAsync(string chatID, string Sysmbol,
             string Price, string ChangeRate, string Low, string High)
     {
         var botClient = new TelegramBotClient("5138490742:AAFK7ZVo8CDaggoCYWc716c1llfqnJCx0zk");
         Message message = await botClient.SendTextMessageAsync(
             chatId: chatID,
             text:
-            $"Se pone interesante esto ; )\n" +
-            $"{Sysmbol} se ha movido {ChangeRate}%\n" +
-            $"En las ultimas 24h, terminando con un precio de {Price}\n" +
-            $"Teniendo un Low de {Low} y un High de {High}");
+            $"Esto se pone interesante 🙃\n" +
+            "\n" +
+            $"👉 {Sysmbol} bajado {ChangeRate}%" +
+            " en las ultimas 24h\n" +
+            "\n" +
+            $"Teniendo un Low 📉 de {Low} y un High 📈 de {High}" +
+            "\n" +
+            "\n" +
+            $"✍️ Precio actual: {Price}");
     }
 
-    static async Task SendMessage20PAsync(string chatID, string Sysmbol,
+    public async Task SendMessage20PAsync(string chatID, string Sysmbol,
         string Price, string ChangeRate, string Low, string High)
     {
         var botClient = new TelegramBotClient("5138490742:AAFK7ZVo8CDaggoCYWc716c1llfqnJCx0zk");
         Message message = await botClient.SendTextMessageAsync(
             chatId: chatID,
             text:
-            $"Y nos fuimos pa arriba ^_^\n" +
-            $"{Sysmbol} se ha movido {ChangeRate}%\n" +
-            $"En las ultimas 24h, terminando con un precio de {Price}\n" +
-            $"Teniendo un Low de {Low} y un High de {High}");
+            $"Preparen los motores 😉\n" +
+            "\n" +
+            $"👉 {Sysmbol} ha subido {ChangeRate}%" +
+            " en las ultimas 24h\n" +
+            "\n" +
+            $"Teniendo un Low 📉 de {Low} y un High 📈 de {High}" +
+            "\n" +
+            "\n" +
+            $"✍️ Precio actual: {Price}");
     }
 
-    static async Task SendMessage20NAsync(string chatID, string Sysmbol,
+    public async Task SendMessage20NAsync(string chatID, string Sysmbol,
         string Price, string ChangeRate, string Low, string High)
     {
         var botClient = new TelegramBotClient("5138490742:AAFK7ZVo8CDaggoCYWc716c1llfqnJCx0zk");
         Message message = await botClient.SendTextMessageAsync(
             chatId: chatID,
             text:
-            $"Las oportunidades llegando\n" +
-            $"{Sysmbol} se ha movido {ChangeRate}%\n" +
-            $"En las ultimas 24h, terminando con un precio de {Price}\n" +
-            $"Teniendo un Low de {Low} y un High de {High}");
+            $"Corre que se te va el tren 😂\n" +
+            "\n" +
+            $"👉 {Sysmbol} ha bajado {ChangeRate}%" +
+            " en las ultimas 24h\n" +
+            "\n" +
+            $"Teniendo un Low 📉 de {Low} y un High 📈 de {High}" +
+            "\n" +
+            "\n" +
+            $"✍️ Precio actual: {Price}");
     }
 
-    static async Task SendMessage30PAsync(string chatID, string Sysmbol,
+    public async Task SendMessage30PAsync(string chatID, string Sysmbol,
         string Price, string ChangeRate, string Low, string High)
     {
         var botClient = new TelegramBotClient("5138490742:AAFK7ZVo8CDaggoCYWc716c1llfqnJCx0zk");
         Message message = await botClient.SendTextMessageAsync(
             chatId: chatID,
             text:
-            $"To the moon\n" +
-            $"{Sysmbol} se ha movido {ChangeRate}%\n" +
-            $"En las ultimas 24h, terminando con un precio de {Price}\n" +
-            $"Teniendo un Low de {Low} y un High de {High}");
+            $"To the Moon 🚀🚀\n" +
+            "\n" +
+            $"👉 {Sysmbol} ha subido {ChangeRate}%" +
+            " en las ultimas 24h\n" +
+            "\n" +
+            $"Teniendo un Low 📉 de {Low} y un High 📈 de {High}" +
+            "\n" +
+            "\n" +
+            $"✍️ Precio actual: {Price}");
     }
 
-    static async Task SendMessage30NAsync(string chatID, string Sysmbol,
+    public async Task SendMessage30NAsync(string chatID, string Sysmbol,
         string Price, string ChangeRate, string Low, string High)
     {
         var botClient = new TelegramBotClient("5138490742:AAFK7ZVo8CDaggoCYWc716c1llfqnJCx0zk");
         Message message = await botClient.SendTextMessageAsync(
             chatId: chatID,
             text:
-            $"Muevete que nos fuimos hasta abajo\n" +
-            $"{Sysmbol} se ha movido {ChangeRate}%\n" +
-            $"En las ultimas 24h, terminando con un precio de {Price}\n" +
-            $"Teniendo un Low de {Low} y un High de {High}");
+            $"Nos fuimos loma abajo y sin frenos 😜🤪\n" +
+            "\n" +
+            $"👉 {Sysmbol} ha bajado {ChangeRate}%" +
+            " en las ultimas 24h\n" +
+            "\n" +
+            $"Teniendo un Low 📉 de {Low} y un High 📈 de {High}" +
+            "\n" +
+            "\n" +
+            $"✍️ Precio actual: {Price}");
     }
 }
